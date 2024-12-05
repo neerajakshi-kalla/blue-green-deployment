@@ -1,9 +1,9 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/ey-demo-proj/blue-app:V01', '-f', './Blue-Application/Dockerfile', './Blue']
+  args: ['build', '-t', 'gcr.io/ey-demo-proj/blue-app:V01', '-f', './Blue-Application/Dockerfile', './Blue-Application']
 
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/ey-demo-proj/green-app:V01', '-f', './Green-Application/Dockerfile', './Green']
+  args: ['build', '-t', 'gcr.io/ey-demo-proj/green-app:V01', '-f', './Green-Application/Dockerfile', './Green-Application']
 
 - name: 'gcr.io/cloud-builders/kubectl'
   args:
