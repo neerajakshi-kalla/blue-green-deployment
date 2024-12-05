@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: myapp-container
-          image: hitanshu91/sample-application-green-version:v1
+          image: neerajakshi5/green-application-version:v1
   replicas: 1
   selector:
     matchLabels:
