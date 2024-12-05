@@ -9,7 +9,7 @@ steps:
   args:
     - 'apply'
     - '-f'
-    - './Kubernetes-YAML/blue-version-deployment.yaml'
+    - './kubernetes-YAML/blue-version-deployment.yaml'
   env:
     - 'CLOUDSDK_COMPUTE_ZONE=us-central1-a'
     - 'CLOUDSDK_CONTAINER_CLUSTER=ey-task-cluster'
@@ -18,7 +18,7 @@ steps:
   args:
     - 'apply'
     - '-f'
-    - './Kubernetes-YAML/green-version-deployment.yaml'
+    - './kubernetes-YAML/green-version-deployment.yaml'
   env:
     - 'CLOUDSDK_COMPUTE_ZONE=us-central1-a'
     - 'CLOUDSDK_CONTAINER_CLUSTER=ey-task-cluster'
